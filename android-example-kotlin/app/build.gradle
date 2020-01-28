@@ -27,15 +27,17 @@ android {
 }
 
 aspectj {
+    java = JavaVersion.VERSION_1_8
     debugInfo false
-    includeAspectsFromJar 'instana-runtime'
+    includeAspectsFromJar 'android-agent'
+    includeAllJars true
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.instana:instana-runtime:1.0.0-SNAPSHOT'
+    implementation 'com.instana.android:android-agent:0.2.1-SNAPSHOT'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation 'android.arch.work:work-runtime-ktx:1.0.0'
