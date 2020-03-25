@@ -2,9 +2,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven {
-            url "https://dl.bintray.com/instana/public-maven"
-        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
@@ -15,9 +12,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        maven {
-            url "https://dl.bintray.com/instana/public-maven"
-        }
+        jcenter()
     }
 }
 
