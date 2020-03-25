@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        Instana.INSTANCE.setView("Main screen");
+        Instana.setView("Main screen");
     }
 
     private static class AsyncQuery extends AsyncTask<String, String, String> {
