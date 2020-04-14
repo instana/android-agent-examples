@@ -10,8 +10,8 @@ class ExampleApp : Application() {
         super.onCreate()
 
         val instanaConfig = InstanaConfig(
-            reportingURL = REPORTING_URL,
-            key = KEY
+            key = KEY,
+            reportingURL = REPORTING_URL
         )
         Instana.setup(this, instanaConfig)
     }
