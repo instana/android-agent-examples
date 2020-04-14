@@ -12,8 +12,8 @@ public class ExampleApp extends Application {
         super.onCreate();
 
         InstanaConfig instanaConfig = new InstanaConfig(
-                REPORTING_URL,
-                KEY
+                KEY,
+                REPORTING_URL
         );
         Instana.setup(this, instanaConfig);
     }
