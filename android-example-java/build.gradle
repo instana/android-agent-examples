@@ -1,11 +1,13 @@
 buildscript {
+    ext.instana_version="4.5.1"
+
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.2'
-        classpath 'com.instana:android-agent-plugin:2.1.1'
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath "com.instana:android-agent-plugin:$instana_version"
     }
 }
 
