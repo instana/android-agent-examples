@@ -8,5 +8,5 @@ Please head over to each example in order to get more details.
 
 ## Examples
 
-- [android-example-kotlin](android-example-java): simple Java example with automatic tracking
-- [android-example-kotlin](android-example-kotlin): simple Java example with automatic tracking
+- [android-example-java](android-example-java): simple Java example with automatic tracking
+- [android-example-kotlin](android-example-kotlin): simple Kotlin example with automatic tracking
